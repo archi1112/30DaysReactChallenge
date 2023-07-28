@@ -1,4 +1,4 @@
-import Main from "./components/Weather/Main.jsx";
+import Main from "./components/ExpenseTracker/Main.jsx";
 import "./app.css";
 function App() {
   return (
