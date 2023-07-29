@@ -20,7 +20,7 @@ const NewTransaction = ({ onAddTransaction }) => {
     }
     const handleChange = (event) => {
         const val = event.target.value;
-        if (event.target.name === "description") {
+        if (event.target.name == "description") {
             setDescription(val)
         }
         else {

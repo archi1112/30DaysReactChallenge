@@ -1,0 +1,178 @@
+.main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    min-width: 700px;
+    text-align: center;
+}
+
+.main_heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.weather_card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card_header {
+    display: flex;
+    flex-direction: column;
+    /* Change the flex direction to stack the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+.weather_city {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.src {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.extra_info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    min-width: 400px;
+}
+
+.left_info,
+.right_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_info {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.right_info {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.left_info h3,
+.right_info h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.left_info p,
+.right_info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Additional styles to align the content in each section */
+.left_info h3:last-child,
+.right_info h3:last-child {
+    margin-bottom: 0;
+}
+
+.left_info p:last-child,
+.right_info p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        min-width: auto;
+        padding: 10px;
+    }
+
+    .weather_card {
+        min-width: auto;
+        margin: 10px;
+    }
+
+    .card_header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .src {
+        margin-bottom: 5px;
+    }
+
+    .extra_info {
+        flex-direction: column;
+        align-items: center;
+        min-width: auto;
+    }
+
+    .left_info,
+    .right_info {
+        align-items: center;
+        text-align: center;
+    }
+}
