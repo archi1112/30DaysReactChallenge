@@ -1,4 +1,4 @@
-import Main from "./components/Calculator/Main.jsx";
+import Main from "./components/RecipeFinder/Main.jsx";
 import "./app.css";
 function App() {
   return (
